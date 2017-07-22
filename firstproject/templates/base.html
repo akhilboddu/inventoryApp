@@ -1,0 +1,23 @@
+<!-- This will make the static tag available for the template below -->
+{% load staticfiles %}
+
+ <!DOCTYPE HTML>
+ <html>
+ 	<head>
+ 		<meta charset="utf-8">
+ 		<title>Inventory Project</title>
+ 		<meta name="description" content="">
+
+ 		<!-- IMPLEMENTING THE CSS -->
+ 		<!-- Use the static tag to link with the css as shown below: -->
+ 		<!-- It goes straight into the static directory to find the css files -->
+ 		<link rel="stylesheet" type="text/css" href="{% static 'main.css' %}">
+ 	</head>
+ 	<body>
+ 		{% block content %}
+ 		{% endblock content %}
+
+ 		<!-- IMPLEMENTING THE JAVASCRIPT -->
+ 		<script src="{% static 'main.js' %}"></script>
+ 	</body>
+ </html>
